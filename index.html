@@ -8,7 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
@@ -19,9 +21,9 @@
     <img src="images/logo.svg" alt="company logo">
     <nav aria-label="primary">
       <ul>
-        <li><a href="">Features</a></li>
-        <li><a href="">Team</a></li>
-        <li><a href="">Sign In</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Sign In</a></li>
       </ul>
     </nav>
   </header>
@@ -39,10 +41,12 @@
         <form>
           <input type="text" placeholder="Enter your email...">
           <input type="submit" value="Get Started">
+          <span class="err-msg">Email is invalid</span>
         </form>
       </div>
     </div>
 
+    <div class="bg-curve"></div>
     <div class="middle">
       <img src="images/illustration-2.svg" alt="three people holding up large speech bubbles">
 
@@ -55,7 +59,7 @@
         <p>Securely share files and folders with friends, family and colleagues for 
         live collaboration. No email attachments required!</p>
 
-        <a href="">See how Fylo works<img src="images/icon-arrow.svg" alt=""></a>
+        <a href="#">See how Fylo works<img src="images/icon-arrow.svg" alt=""></a>
 
         <div class="testimonial">
           <img src="images/icon-quotes.svg" alt="">
@@ -84,6 +88,7 @@
       <form>
         <input type="text" placeholder="email@example.com">
         <input type="submit" value="Get Started For Free">
+        <span class="err-msg">Email is invalid</span>
       </form>
     </div>
   </main>
@@ -100,21 +105,23 @@
       </ul>
 
       <ul class="site-map">
-        <li><a href="">About Us</a></li>
-        <li><a href="">Jobs</a></li>
-        <li><a href="">Press</a></li>
-        <li><a href="">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
       </ul>
 
       <ul class="company">
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">Terms</a></li>
-        <li><a href="">Privacy</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
       </ul>
 
-      <!-- facebook icon -->
-      <!-- twitter icon -->
-      <!-- instagram icon -->
+      <ul class="socials">
+        <li><a href="#" aria-label="facebook" class="fa fa-facebook-f"></a></li>
+        <li><a href="#" aria-label="twitter" class="fa fa-twitter"></a></li>
+        <li><a href="#" aria-label="instagram" class="fa fa-instagram"></a></li>
+      </ul>
     </nav>
   </footer>
 
